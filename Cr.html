@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de DOM</title>
+    <link rel="stylesheet" href="cr.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="titulo">Dados  do Colaborador</h1>
+       
+        <div class="campo">
+            <input type="text" id="input-nome" placeholder="Digite seu nome...">
+        </div>
+
+        <div class="campo">
+            <input type="email" id="input-email" placeholder="Digite seu cargo...">
+
+        </div>
+        
+        <div class="campo">
+            <select id="input-estado">
+                <option value="Design">Design</option>
+                <option value="Dese">Desenvolvimento</option>
+                <option value="Mkt">Marketing</option>
+            </select>
+        </div>
+
+       <div>
+        <button id="btn-finalizar">Finalizar Cadastro</button>
+        <p id="mensagem-feedback"></p>
+         </div>
+
+        <div class="inner-card">
+            <p><strong>Nome:</strong> <span id="card-nome">—</span></p>
+            <p><strong>Cargo:</strong> <span id="card-cargo">—</span></p>
+            <p><strong>Departamento:</strong> <span id="card-dept">—</span></p>
+        </div>
+
+    </div>
+
+    <script src="a.js"></script>
+</body>
+</html>

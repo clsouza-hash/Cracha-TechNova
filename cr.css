@@ -1,0 +1,113 @@
+body {
+    background-color: #365e9b;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#container {
+    justify-content: center;
+    background-color: #ffffff;
+    width: 760px;
+    padding: 40px;
+    padding-right: 360px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(24, 118, 195, 0.646);
+    text-align: center;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#btn-finalizar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 460px;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+#btn-finalizar:hover {
+    background-color: #0056b3;
+}
+
+#mensagem-feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff; /* Cor verde para sucesso */
+}
+
+/* Card interno posicionado à direita dentro do container */
+.inner-card {
+    justify-content: end;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+    border: 1px solid rgba(0,0,0,0.06);
+    text-align: left;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.inner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+}
+
+.inner-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inner-card.design {
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    border: 3px solid #2ab400; /* VERDE */
+}
+
+.inner-card.design h3,
+.inner-card.design p strong {
+    color: #000000;
+}
+
+.inner-card.development {
+    background: linear-gradient( #356db6 100%);
+    border: 3px solid #b4a800; /* verde */
+}
+
+.inner-card.inner-card.design {
+    background: linear-gradient( #b235b6 100%);
+    border: 3px solid #b4002d; /* verde */
+}
+
+.inner-card.inner-card.default {
+    background: linear-gradient( #b63535 100%);
+    border: 3px solid #9000b4; /* verde */
+}
+
+.inner-card.development h3,
+.inner-card.development p strong {
+    color: #000000;
+}
+
+.inner-card.default {
+    background: #ffffff;
+}
+
